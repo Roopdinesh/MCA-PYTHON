@@ -23,3 +23,4 @@ print(f" name is {x},city is {city},age is {age},rate is {rate}")
 
 print("name is",'dinesh',"city is","nellore","age is",20,"rate is",5.50)
 print(f"{x=},{city=},{age=},{rate=}")
+
