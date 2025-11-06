@@ -8,12 +8,12 @@ print(a//b)
 print(a**b)  #20 power of 30/exponenation
 
 print(a%b)    #remainder'''
-
+'''
 total=1
 for num in range(10,20):
     total=total+num
     print(total)
-
+'''
  
 
 
@@ -24,7 +24,7 @@ print(x)
 x=[2,4,5,6,1,2,5.6]
 
 
-'''p=str(input('enter your name'))
+p=str(input('enter your name'))
 marks=int(input('enter your marks'))
 
 
@@ -41,3 +41,30 @@ print(f"So, you're {age} old, {height} tall and {weight} heavy.")'''
 
 
 
+'''a = "python easy"
+a = "python easy"
+print(a[1])
+
+print(a[-2])'''
+'''
+a = "python easy"
+print(a[1])
+print(a[2])'''
+
+'''
+from rembg import remove
+from PIL import image
+
+
+input_path='pawan kalyan.jpg'
+output_path='pawan kalyanjsp.jpg'
+
+inp=image.open(input_path)
+output=remove(inp)
+output.save(output_path)
+image.open(output_path)'''
+
+nums=[1,2,3,4]
+for i in nums:
+    nums.remove(i)
+    print(nums)
