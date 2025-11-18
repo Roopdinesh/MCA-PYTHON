@@ -64,7 +64,11 @@ output=remove(inp)
 output.save(output_path)
 image.open(output_path)'''
 
-nums=[1,2,3,4]
+'''nums=[1,2,3,4]
 for i in nums:
     nums.remove(i)
-    print(nums)
+    print(nums)'''
+import numpy as np
+
+x=np.array([[2,4][5,11],[3,4]])
+print(x.mean())
