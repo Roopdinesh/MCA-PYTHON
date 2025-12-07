@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}Motivation Boost{% endblock %}
+
+{% block content %}
+    <div class="motivation-card" style="background-color: pink;">
+        <div class="emoji">{{ emoji }}</div>
+        <h2>Motivation Level Check</h2>
+        <div class="score">Desperation Score: {{ score }}/10</div>
+        <p class="message-text">{{ message }}</p>
+        <a href="{{ url_for('home') }}" class="back-btn">← Back to Home</a>
+    </div>
+{% endblock %}

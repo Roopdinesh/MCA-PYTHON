@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+h1 {
+    color: #667eea;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.btn {
+    background: #667eea;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    display: inline-block;
+    transition: transform 0.2s;
+    font-weight: bold;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    background: #764ba2;
+}
+
+.btn.emergency {
+    background: #e74c3c;
+}
+
+.btn.emergency:hover {
+    background: #c0392b;
+}
+
+.tip-card, .emergency-card, .motivation-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.emergency-card {
+    background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+}
+
+.emoji {
+    font-size: 64px;
+    margin: 20px 0;
+}
+
+.tip-text, .response-text, .message-text {
+    font-size: 20px;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+.score {
+    background: rgba(255,255,255,0.2);
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 20px 0;
+}
+
+.back-btn {
+    color: white;
+    background: rgba(255,255,255,0.3);
+    padding: 15px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.back-btn:hover {
+    background: rgba(255,255,255,0.4);
+}

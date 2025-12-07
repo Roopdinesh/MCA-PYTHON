@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}College Survival Guide{% endblock %}
+
+{% block content %}
+    <h1>🎓 College Survival Guide 🎓</h1>
+    <p class="subtitle">Your emergency handbook for college life! 📖</p>
+
+    <div class="nav-buttons">
+        <a href="{{ url_for('advice', category='academic') }}" class="btn">📚 Academic Tips</a>
+        <a href="{{ url_for('advice', category='social') }}" class="btn">🎉 Social Life</a>
+        <a href="{{ url_for('advice', category='mental') }}" class="btn">🧘 Mental Health</a>
+        <a href="{{ url_for('crisis', crisis_type='exam') }}" class="btn emergency">🚨 Exam Crisis</a>
+        <a href="{{ url_for('crisis', crisis_type='project') }}" class="btn emergency">🔥 Project Panic</a>
+        <a href="{{ url_for('crisis', crisis_type='deadline') }}" class="btn emergency">⏰ Deadline Alert</a>
+        <a href="{{ url_for('motivation', desperation_score=5) }}" class="btn">💪 Need Motivation</a>
+    </div>
+{% endblock %}
